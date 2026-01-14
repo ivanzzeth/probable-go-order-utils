@@ -20,7 +20,7 @@ Golang utilities used to generate and sign orders from Polymarket's CTFExchange
 ## Installation
 
 ```bash
-go get github.com/ivanzzeth/polymarket-go-order-utils
+go get github.com/ivanzzeth/probable-go-order-utils
 ```
 
 ## Quick Start
@@ -33,9 +33,9 @@ import (
     "math/big"
 
     "github.com/ethereum/go-ethereum/crypto"
-    "github.com/ivanzzeth/polymarket-go-order-utils/pkg/builder"
-    "github.com/ivanzzeth/polymarket-go-order-utils/pkg/model"
-    "github.com/ivanzzeth/polymarket-go-order-utils/pkg/signer"
+    "github.com/ivanzzeth/probable-go-order-utils/pkg/builder"
+    "github.com/ivanzzeth/probable-go-order-utils/pkg/model"
+    "github.com/ivanzzeth/probable-go-order-utils/pkg/signer"
 )
 
 func main() {
@@ -114,7 +114,7 @@ Two types of exchanges are supported:
 ```go
 import (
     "github.com/ethereum/go-ethereum/crypto"
-    "github.com/ivanzzeth/polymarket-go-order-utils/pkg/signer"
+    "github.com/ivanzzeth/probable-go-order-utils/pkg/signer"
 )
 
 // From hex string
@@ -154,8 +154,8 @@ Create an order builder and build an order without signing:
 ```go
 import (
     "math/big"
-    "github.com/ivanzzeth/polymarket-go-order-utils/pkg/builder"
-    "github.com/ivanzzeth/polymarket-go-order-utils/pkg/model"
+    "github.com/ivanzzeth/probable-go-order-utils/pkg/builder"
+    "github.com/ivanzzeth/probable-go-order-utils/pkg/model"
 )
 
 chainId := big.NewInt(137) // Polygon mainnet
@@ -238,7 +238,7 @@ fmt.Printf("Signature: %x\n", signature)
 Verify that a signature is valid:
 
 ```go
-import "github.com/ivanzzeth/polymarket-go-order-utils/pkg/signer"
+import "github.com/ivanzzeth/probable-go-order-utils/pkg/signer"
 
 isValid, err := signer.ValidateSignature(
     signerAddress,
@@ -313,9 +313,9 @@ import (
 
     "github.com/ethereum/go-ethereum/common"
     "github.com/ethereum/go-ethereum/crypto"
-    "github.com/ivanzzeth/polymarket-go-order-utils/pkg/builder"
-    "github.com/ivanzzeth/polymarket-go-order-utils/pkg/model"
-    "github.com/ivanzzeth/polymarket-go-order-utils/pkg/signer"
+    "github.com/ivanzzeth/probable-go-order-utils/pkg/builder"
+    "github.com/ivanzzeth/probable-go-order-utils/pkg/model"
+    "github.com/ivanzzeth/probable-go-order-utils/pkg/signer"
 )
 
 func main() {

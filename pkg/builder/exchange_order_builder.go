@@ -1,7 +1,7 @@
 package builder
 
 import (
-	"github.com/ivanzzeth/polymarket-go-order-utils/pkg/model"
+	"github.com/ivanzzeth/probable-go-order-utils/pkg/model"
 )
 
 //go:generate mockery --name ExchangeOrderBuilder

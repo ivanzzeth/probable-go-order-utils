@@ -1,4 +1,4 @@
-module github.com/ivanzzeth/polymarket-go-order-utils
+module github.com/ivanzzeth/probable-go-order-utils
 
 go 1.24.0
 
