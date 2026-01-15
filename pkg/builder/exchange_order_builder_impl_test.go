@@ -8,7 +8,7 @@ import (
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/ethereum/go-ethereum/crypto"
 	"github.com/ivanzzeth/ethsig"
-	polymarketcontracts "github.com/ivanzzeth/polymarket-go-contracts"
+	probablecontracts "github.com/ivanzzeth/probable-go-contracts"
 	"github.com/ivanzzeth/probable-go-order-utils/pkg/model"
 	"github.com/stretchr/testify/assert"
 )
@@ -424,7 +424,7 @@ func TestBuildSignedOrder2(t *testing.T) {
 		FeeRateBps:    "100",
 		Nonce:         "0",
 		Expiration:    "0",
-		SignatureType: polymarketcontracts.SignatureTypePolyGnosisSafe,
+		SignatureType: probablecontracts.SignatureTypePolyGnosisSafe,
 	}, model.NegRiskCTFExchange)
 	assert.NoError(t, err)
 	assert.NotNil(t, signedOrder)

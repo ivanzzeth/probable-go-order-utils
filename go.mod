@@ -6,10 +6,12 @@ toolchain go1.24.9
 
 require (
 	github.com/ethereum/go-ethereum v1.16.1
-	github.com/ivanzzeth/ethsig v0.0.1
-	github.com/ivanzzeth/polymarket-go-contracts v0.0.1
+	github.com/ivanzzeth/ethsig v0.1.0
+	github.com/ivanzzeth/probable-go-contracts v0.0.0
 	github.com/stretchr/testify v1.11.1
 )
+
+replace github.com/ivanzzeth/probable-go-contracts => ../probable-go-contracts
 
 require (
 	github.com/CoboGlobal/cobo-waas2-go-sdk v1.25.0 // indirect
